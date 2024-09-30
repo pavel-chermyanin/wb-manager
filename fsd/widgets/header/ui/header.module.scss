@@ -1,0 +1,23 @@
+
+.header {
+  padding-inline: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 16px;
+  background: linear-gradient(45deg, #80c4ff, #59afff);
+  border-radius: 8px;
+
+  .logo_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .logo_text {
+
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+  }
+}

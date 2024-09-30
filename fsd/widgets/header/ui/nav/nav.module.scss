@@ -1,0 +1,14 @@
+
+
+.nav{
+  display: flex;
+  gap: 16px;
+
+  .nav_item{
+    color: white !important;
+
+    &:hover,&.active{
+      background-color: #3498ff !important;
+    }
+  }
+}
