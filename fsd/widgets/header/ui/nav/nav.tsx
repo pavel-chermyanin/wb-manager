@@ -59,7 +59,7 @@ export const Navbar: React.FC = () => {
         </Nav.Item>
         <Nav.Item
           className={cl(styles.nav_item,{
-            [styles.active]: pathname === Routing.STATISTICS
+            [styles.active]: pathname.includes(Routing.STATISTICS)
           })}
           eventKey={Routing.STATISTICS}
         >
@@ -67,7 +67,7 @@ export const Navbar: React.FC = () => {
         </Nav.Item>
         <Nav.Item
           className={cl(styles.nav_item,{
-            [styles.active]: pathname === Routing.ANALITICS
+            [styles.active]: pathname.includes(Routing.ANALITICS)
           })}
           eventKey={Routing.ANALITICS}
         >

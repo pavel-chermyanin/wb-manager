@@ -2,7 +2,7 @@ import {Header as HeaderRsuite} from "rsuite";
 import {Logo} from "@/fsd/shared/ui/logo/Logo";
 import {Navbar} from "./nav/nav";
 import styles from './header.module.scss'
-import {UserInfo} from "@/fsd/widgets/header/ui/user-info";
+import {UserInfo} from "@/fsd/widgets/header/ui/user-info/user-info";
 import {LogoutBtn} from "@/fsd/features/logout-btn/ui/logout-btn";
 
 
