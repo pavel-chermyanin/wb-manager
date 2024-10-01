@@ -1,8 +1,8 @@
-import {statisticsClient} from "@/fsd/shared/config/statistics-client";
+import {wbApiClient} from "@/fsd/shared/config/wb-api-client";
 import {UserPaths} from "../user.paths";
 
 
 export const me = async () => {
-  const response = await statisticsClient.get(UserPaths.ME)
+  const response = await wbApiClient.get(UserPaths.ME)
   return response.data
 }

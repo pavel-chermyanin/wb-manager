@@ -73,6 +73,14 @@ export const Navbar: React.FC = () => {
         >
           Аналитика
         </Nav.Item>
+        <Nav.Item
+          className={cl(styles.nav_item,{
+            [styles.active]: pathname.includes(Routing.MARKETPLACE)
+          })}
+          eventKey={Routing.MARKETPLACE}
+        >
+          Маркетплейс
+        </Nav.Item>
       </Nav>
     </>
   );

@@ -2,10 +2,10 @@ import axios from "axios";
 import {ACCESS_TOKEN, WBTOKEN} from "@/fsd/core/global.constants";
 
 
-const BASE_URL = 'https://statistics-api.wildberries.ru/api/v1';
+
 const createAxiosLoginInstance = () => {
   const instance = axios.create({
-    baseURL: BASE_URL,
+    baseURL: '',
     headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json',
@@ -42,4 +42,4 @@ const createAxiosLoginInstance = () => {
   return instance;
 };
 
-export const statisticsClient = createAxiosLoginInstance();
+export const wbApiClient = createAxiosLoginInstance();

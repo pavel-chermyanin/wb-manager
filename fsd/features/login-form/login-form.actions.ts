@@ -1,9 +1,9 @@
 
 import {AuthForm, AuthResponse} from "./login-form.types";
-import {statisticsClient} from "@/fsd/shared/config/statistics-client";
+import {wbApiClient} from "@/fsd/shared/config/wb-api-client";
 
 
 export const login = async (formData: AuthForm) => {
-  const response = await statisticsClient.post(`/auth/jwt/login`,formData)
+  const response = await wbApiClient.post(`/auth/jwt/login`,formData)
   return response.data
 }

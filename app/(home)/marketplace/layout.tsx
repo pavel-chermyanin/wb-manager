@@ -1,17 +1,17 @@
 
 import React from "react";
-import {SidebarAnalitics} from "@/fsd/widgets/analitics/sidebar";
+import {SidebarMarketplace} from "@/fsd/widgets/marketplace/sidebar";
 
 
 
-export default function StatisticsLayout(
+export default function MarketplaceLayout(
   {
     children,
 
   }: Readonly<{ children: React.ReactNode }>) {
   return (
     <div className={'flex gap-4 w-full'}>
-      <SidebarAnalitics/>
+      <SidebarMarketplace/>
       {children}
     </div>
   );

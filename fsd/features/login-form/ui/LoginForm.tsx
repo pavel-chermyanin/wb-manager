@@ -10,7 +10,7 @@ import {Button, Message} from "rsuite";
 import {LoginInputs} from "./login-inputs/LoginInputs";
 import img from '../assets/roomir-logo.png'
 import Image from "next/image";
-import {CustomHeading} from "@/fsd/shared/ui/CustomHeading";
+import {CustomHeading} from "@/fsd/shared/ui/custom-heading";
 import {useEffect} from "react";
 import {ACCESS_TOKEN} from "@/fsd/core/global.constants";
 import {useLoginMutation} from "@/fsd/features/login-form";
