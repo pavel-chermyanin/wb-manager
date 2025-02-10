@@ -10,7 +10,7 @@ export default function StatisticsLayout(
 
   }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <div className={'flex gap-4 w-full'}>
+    <div className={'flex gap-4'}>
       <SidebarAnalitics/>
       {children}
     </div>

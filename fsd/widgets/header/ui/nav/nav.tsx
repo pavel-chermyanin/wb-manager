@@ -23,10 +23,11 @@ export const Navbar: React.FC = () => {
   // }, [isSuccess]);
 
   // // Предзагрузка маршрутов при загрузке приложения
-  // useEffect(() => {
-  //   prefetch(Routing.HOME);    // Предзагрузка главной страницы
-  //   prefetch(Routing.REPORTS); // Предзагрузка страницы отчетов
-  // }, [prefetch]);
+  useEffect(() => {
+    prefetch(Routing.HOME);    // Предзагрузка главной страницы
+    prefetch(Routing.STATISTICS); // Предзагрузка страницы отчетов
+    prefetch(Routing.ANALITICS); // Предзагрузка страницы отчетов
+  }, [prefetch]);
 
   // Устанавливаем активный элемент при монтировании компонента
   useEffect(() => {
@@ -59,7 +60,7 @@ export const Navbar: React.FC = () => {
         </Nav.Item>
         <Nav.Item
           className={cl(styles.nav_item,{
-            [styles.active]: pathname.includes(Routing.STATISTICS)
+            [styles.active]: pathname === Routing.STATISTICS
           })}
           eventKey={Routing.STATISTICS}
         >
@@ -67,19 +68,11 @@ export const Navbar: React.FC = () => {
         </Nav.Item>
         <Nav.Item
           className={cl(styles.nav_item,{
-            [styles.active]: pathname.includes(Routing.ANALITICS)
+            [styles.active]: pathname === Routing.ANALITICS
           })}
           eventKey={Routing.ANALITICS}
         >
           Аналитика
-        </Nav.Item>
-        <Nav.Item
-          className={cl(styles.nav_item,{
-            [styles.active]: pathname.includes(Routing.MARKETPLACE)
-          })}
-          eventKey={Routing.MARKETPLACE}
-        >
-          Маркетплейс
         </Nav.Item>
       </Nav>
     </>
